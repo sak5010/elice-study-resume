@@ -34,6 +34,12 @@ nav > ul {
 nav > ul > li > a {
   text-decoration: none;
   color: white;
+  transition: all 0.4s ease-in;
+}
+
+nav > ul > li > a:hover {
+  background-color: darkgray;
+  letter-spacing: 4px;
 }
 
 main {
@@ -43,6 +49,23 @@ main {
 #profile > h1 {
   font-size: 48px;
   margin: 20px 0;
+}
+
+.profile__img {
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.profile__img > img {
+  transition: transform 1s;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.profile__img > img:hover {
+  transform: scale(1.2);
 }
 
 #detail {
